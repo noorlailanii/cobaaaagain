@@ -1,0 +1,37 @@
+[{
+        "soal":	"Hasil dari 9<sup>3</sup> adalah...",
+        "a": "a. 64",
+		"b": "b. 729",
+		"c": "c. 343",
+		"d": "d. 512",
+        "benar": "b"
+},{
+    "soal":	"Di bawah ini 8 bilangan kubik pertama yang benar adalah....",
+    "a": "a. 1, 2, 3, 4, 5,  6, 7, 8",
+    "b": "b. 1, 4, 8, 12, 16, 18, 20, 22",
+    "c": "c. 1, 8, 27, 64, 123, 215, 333, 512",
+    "d": "d. 1, 8, 27, 64, 125, 216, 343, 512",
+    "benar": "d"
+}
+,{
+    "soal":	"Hasil operasi hitung bilangan pangkat tiga berikut $3^3\\times2^3-5^3$ adalah....",
+    "a": "a. 91",
+    "b": "b. 92",
+    "c": "c. 93",
+    "d": "d. 94",
+    "benar": "a"
+},{
+    "soal":	"Hasil dari akar pangkat tiga $\\sqrt[3]{1.331}$ adalah....",
+    "a": "a. 13",
+    "b": "b. 12",
+    "c": "c. 11",
+    "d": "d. 10",
+    "benar": "c"
+},{
+    "soal":	"Hasil dari operasi hitung akar pangkat tiga $\\sqrt[3]{1.728}\\times\\sqrt[3]{3.375}$ adalah....",
+    "a": "a. 180",
+    "b": "b. 200",
+    "c": "c. 150",
+    "d": "d. 300",
+    "benar": "a"
+}]

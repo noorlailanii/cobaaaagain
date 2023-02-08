@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ocbai</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var data=JSON.parse(xhttp.responseText);
+         
+            for (let i=0; i<data.length; i++) {
+                let soalIsi = data[i].soal;
+                let opsiA = data[i].a;
+                let opsiB = data[i].b;
+                let opsiC = data[i].c;
+                let opsiD = data[i].d;
+
+
+                let soalTampil = document.querySelectorAll("#soal");
+                soalTampil[i].innerHTML = i+1 + ". " + soalIsi;
+
+                let jwbA = document.querySelectorAll('#a');
+                jwbA[i].innerHTML = opsiA;
+                
+                let jwbB = document.querySelectorAll('#b');
+                jwbB[i].innerHTML = opsiB;
+                
+                let jwbC = document.querySelectorAll('#c');
+                jwbC[i].innerHTML = opsiC;
+                
+                let jwbD = document.querySelectorAll('#d');
+                jwbD[i].innerHTML = opsiD;
+
+            };
+      }
+  };
+  xhttp.open("GET", "kuis1.json", true);
+  xhttp.send();
+
+  function cobatampil(){
+        
+        
+        }
+
+    </script>
+    <div class="container-fluid p-2">
+            <div class="row mx-6 mt-5">
+                <div class="col p-3 me-sm-4" style="background-color:beige;">
+                    <div class="card-body p-1">
+                        <div class="bgsoal">
+                        
+                            <div id="soal-1">
+
+                            <div class="soalsoal">
+                                <p id="soal"></p>
+                                <form name="jawabsatu">
+                                    <!-- <div class="bg_pilihan">
+                                        <input class="soal" type="radio" name="jawabansatu" value="a"><span id="a"></span><br>
+                                    </div>
+                                    <div class="bg_pilihan">
+                                        <input type="radio" name="jawabansatu" value="b"><span id="b"></span><br>
+                                    </div>  
+                                    <div class="bg_pilihan">
+                                        <input type="radio" name="jawabansatu" value="c"><span id="c"></span><br>
+                                    </div>    
+                                    <div class="bg_pilihan">    
+                                        <input type="radio" name="jawabansatu" value="d"><span id="d"></span><br>
+                                    </div> -->
+                                        <input class="soal" type="radio" name="jawabansatu" value="a" onchange="warna()"><span id="a"></span><br>
+                                        <input type="radio" name="jawabansatu" value="b" onchange="warna()"><span id="b"></span><br>
+                                        <input type="radio" name="jawabansatu" value="c"  onchange="warna()"><span id="c"></span><br>
+                                        <input type="radio" name="jawabansatu" value="d" onchange="warna()"><span id="d"></span><br>
+                                        <div class="row">
+                                            <div class="col-6"><a class="btn btn-primary" onclick="" hidden>Sebelumnya</a></div>
+                                            <div class="col-6 text-right"><a class="btn btn-primary" onclick="Selanjutnya()">Selanjutnya</a></div>
+                                            <div class="col-6 text-right"><a class="btn btn-primary" onclick="cobatampil()">Tampil</a></div>
+                                        </div>
+                                </form>
+                            </div>
+                            </div>
+                            <div id="soal-2" hidden>
+                                <p id="soal"></p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="a">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      <span id="a"></span>
+                                    </label>
+                                </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="b">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      <span id="b"></span>
+                                    </label>
+                                </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="c">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      <span id="c"></span>
+                                    </label>
+                                </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="d">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      <span id="d"></span>
+                                    </label>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-6"><a class="btn btn-primary" onclick="">Sebelumnya</a></div>
+                                    <div class="col-6 text-right"><a class="btn btn-primary" onclick="Selanjutnya()">Selanjutnya</a></div>
+                                </div>
+                            </div>
+                        </form>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2" style="background-color:pink;">
+                    <div class="card-header" style="height:2rem; background-color:wheat;">
+                        TIMER
+                    </div>
+                    <div class="card-header mt-3">
+                        Nomor Soal
+                    </div>
+                    <div class="card-header p-3" style="background-color: white;">
+                        <a href="#" class="btn p-1 soall belum" id="nomor1">1</a>
+                        <a href="#" class="btn p-1 soall belum" id="nomor2">2</a>
+                        <a href="#" class="btn p-1 soall belum" id="nomor3">3</a><br>
+                        <a href="#" class="btn p-1 mt-2 soall belum" id="nomor4">4</a>
+                        <a href="#" class="btn p-1 mt-2 soall belum"  id="nomor5">5</a>
+                    </div>
+                <p>Keterangan:</p>  
+                <p><span class="btn p-1" style="background-color: white; width: 30%;">Putih </span>= Belum dijawab</p>
+                <p><span class="btn p-1" style="background-color: rgb(101, 168, 255); width: 30%;">Biru </span>= Sudah dijawab</p>  
+                </div>
+            </div>
+    </div>
+    <table class="table table-primary">
+        <!--<thead>
+            <tr>
+                <tr>Soal</tr>
+                <tr>Pil.a</tr>
+                <tr>Pil.b</tr>
+                <tr>Pil.c</tr>
+                <tr>Pil.d</tr>
+                <tr>Jwbn Bnr</tr>
+            </tr>
+        </thead>
+        <tbody id="demo">
+
+        </tbody>
+    </table>
+    <p id="demo"></p>
+-->
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+    
+    // let soalTampil = document.querySelectorAll(".soalsoal");
+    //     for(let y=0; y<soalTampil.length; y++){
+    //         soalTampil[y].addEventListener('click',function(){
+    //             let pilih = document.querySelectorAll(".bg_pilihan input");
+    //             for(let j=0; j<pilih.length; j++){
+    //                 pilih[j].addEventListener('click',function(){
+    //                     soall[y].className = soall[y].className.replace("belum","sudah");
+    //                 })
+    //             }
+    //         })
+    //     }
+function warna(){
+    var group = document.jawabsatu.jawabansatu;
+    var nomor =  document.getElementById("nomor1")
+        for (var i=0; i<group.length; i++) {
+            if (group[i].checked) document.getElementById("nomor1").style="border:2px solid grey; width:30%; height:30%; background-color:rgb(101, 168, 255);";
+             
+            
+        }   
+}
+    
+
+    function Selanjutnya() {
+        
+
+        document.getElementById("soal-1").hidden = true;
+        document.getElementById("soal-2").hidden = false;
+
+    }
+</script>
+</body>
+</html>

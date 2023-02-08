@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Volume Kubus</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">
+                <img src="assets/img/bangunruang.png" style="width: 20%;">
+                Bangun Ruang
+            </a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars" style="color:white;"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">
+                                <h5>Daftar Materi</h5>
+                            </div>
+                                <a class="nav-link" href="pengantar.html">
+                                <div class="sb-nav-link-icon" aria-expanded="true"><i class="fas fa-book"></i></div>
+                                Pengantar Bangun Ruang
+                            </a>
+                            
+                            <a class="nav-link collapsed" href="pangkattiga.html" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pangkat Tiga & Akar Pangkat Tiga
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="pangkattiga.html">Pangkat Tiga</a>
+                                    <a class="nav-link" href="akarpangkattiga.html.html">Akar Pangkat Tiga</a>
+                                    <a class="nav-link" href="kuis1.html">Kuis 1</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="jaringkubus.html" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-cube"></i></div>
+                                Jaring-Jaring
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>                            
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="jaringkubus.html">Jaring-Jaring Kubus</a>
+                                    <a class="nav-link" href="jaringbalok.html">Jaring-Jaring Balok</a>
+                                    <a class="nav-link" href="kuis2.html">Kuis 2</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed active" href="volumekubus.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <div class="sb-nav-link-icon"><i class="fas fa-cubes"></i></div>
+                                Volume
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="pagesCollapseError" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="volumekubus.html">Volume Kubus</a>
+                                    <a class="nav-link active" href="volumebalok.html">Volume Balok</a>
+                                    <a class="nav-link" href="kuis3.html">Kuis 3</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link" href="masalah.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
+                                Menyelesaikan masalah tentang Volume Kubus dan Balok
+                            </a>
+                            <a class="nav-link" href="evaluasi.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-pencil-square"></i></div>
+                                Evaluasi
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h3 class="mt-4">Volume Balok</h1>
+                        <div class="card mb-4 p-3 text-sm-justify">                    
+                            <p>
+                                Balok merupakan bangun ruang yang memeiliki 6 sisi. 
+                                Pada balok, sisi-sisi yang sehadap, sejajar dan sama luas. Volume balok juga dapat ditentukan dengan menghitung banyak kubus satuan yang menyusunnya 
+                                (silahkan lihat pembahasan kubus satuan kembali)
+                            </p>
+                            <P>
+                                Kamu sudah memahami bagaimana menghitung kubus satuan dalam kubus transparan, 
+                                maka kamu juga pasti bisa memahami bagaimana menghitung kubus satuan dalam 
+                                balok transparan. Jika menghitung volume kubus menggunakan rumus $𝑠𝑖𝑠𝑖\times 𝑠𝑖𝑠𝑖\times 𝑠𝑖𝑠𝑖$ 
+                                karena mempunyai ukuran sisi yang sama seperti diperlihatkan pada gambar 10 maka 
+                                balok tidak bisa seperti itu karena balok mempunyai ukuran sisi yang berbeda, 
+                                yaitu yang disebut panjang, 
+                                lebar dan tinggi seperti diperlihatkan pada gambar 11.
+                            </P>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img src="assets/img/kubus.png" style="width: 10rem;">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="assets/img/balok.png" style="width: 15rem;">
+                                </div>
+                            </div><br>
+                            <p>
+                                Sehingga, volume balok dapat dihitung dengan cara berikut.
+                            </p>
+                            <center>
+                            <div class="card card-header mt-2 p-3 " style="width:40%;color: white;">
+                                $Volume\;Balok = Panjang \times Lebar \times Tinggi$
+                            </div>
+                            <p>atau</p>
+                            <div class="card card-header mt-2 p-3 " style="width:15%;color: white;">
+                                $V = p \times l \times t$
+                            </div>
+                            <div class="card card-body mt-2 p-3 " style="width:30%;border:1px solid black; text-align: left;">
+                                <p><b>Dengan Keterangan :</b></p>
+                                <p>$p$ = Panjang Balok</p>
+                                <p>$l$ = Lebar Balok</p>
+                                <p>$t$ = Tinggi Balok</p>
+                            </div>
+                            </center>
+                            <br><p>
+                            Cara kita menghitung volume balok adalah dengan menghitung $𝑝𝑎𝑛𝑗𝑎𝑛𝑔\times 𝑙𝑒𝑏𝑎𝑟\times 𝑡𝑖𝑛𝑔𝑔𝑖$, 
+                            kita juga bisa menghitung berapa sisi panjang atau sisi lebar atau sisi tinggi 
+                            sebuah balok jika salah satu dari sisi tersebut belum diketahui sedangkan volume nya 
+                            sudah diketahui. 
+                            Yaitu dengan menggunakan rumus:
+                            </p>
+                            <div class="card card-body mt-1" style="width: auto;">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="card card-body mt-2 p-1" style="width:50%;border:2px none black;">
+                                            <p>Untuk mencari panjang sisi:</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-sm-start">
+                                        <div class="card card-body mt-2 p-1" style="width:30%;border:2px dashed black; background-color: rgb(248, 214, 169);">
+                                            <p>
+                                                <center><h5 style="color:black; text-align:center;">$p = \frac{V}{l\times t}$</h5></center>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 text-sm-start">
+                                        <img src="assets/img/mncripanjang.png" class="pe-sm-1" style="width: 12rem;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-body mt-1" style="width: auto;">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="card card-body mt-2 p-1" style="width:50%;border:2px none black;">
+                                            <p>Untuk mencari lebar sisi:</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-sm-start">
+                                        <div class="card card-body mt-2 p-1" style="width:30%;border:2px dashed black; background-color: rgb(248, 214, 169);">
+                                            <p>
+                                                <center><h5 style="color:black; text-align:center;">$p = \frac{V}{p\times t}$</h5></center>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 text-sm-start">
+                                        <img src="assets/img/mncrilebar.png" class="pe-sm-1" style="width: 14rem;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-body mt-1" style="width: auto;">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="card card-body mt-2 p-1" style="width:50%;border:2px none black;">
+                                            <p>Untuk mencari tinggi sisi:</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-sm-start">
+                                        <div class="card card-body mt-2 p-1" style="width:30%;border:2px dashed black; background-color: rgb(248, 214, 169);">
+                                            <p>
+                                                <center><h5 style="color:black; text-align:center;">$p = \frac{V}{p\times l}$</h5></center>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 text-sm-start">
+                                        <img src="assets/img/mncritinggi.png" class="pe-sm-1" style="width: 14rem;">
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="container-fluid pe-4 p-3 mb-4">
+                                    <button type="button" class="btn btn-warning" onclick="btnPilihYa()" id="tmblPilYa" value="ya" style="width: 5rem;">Ya</button>
+                                    <button type="button" class="btn btn-warning" onclick="btnPilihTidak()" id="tmblPilTdk" value="tidak" style="width: 5rem;">Tidak</button>
+                                    <span id="tampilPil"></span>
+                                </div>
+                                
+                        </div>
+                    </div>
+                    <div class="container-fluid px-4 p-3 mb-4 text-center">
+                        <a href="volumebalok.html" type="button" class="btn btn-primary">Sebelumnya</a>
+                        <a href="volumebalok.html" type="button" class="btn btn-primary">1</a>
+                        <a href="volumebalok2.html" type="button" class="btn btn-primary active">2</a>  
+                        <a href="kuis3.html" type="button" class="btn btn-primary">Selanjutnya</a>                          
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };
+        </script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <script id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>

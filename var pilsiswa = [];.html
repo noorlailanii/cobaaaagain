@@ -1,0 +1,56 @@
+var pilsiswa = [];
+        let radio1 = document.querySelector("#jawabsatu");
+        let radio2 = document.querySelector("#jawabdua");
+        let radio3 = document.querySelector("#jawabtiga");
+        let radio4 = document.querySelector("#jawabempat");
+        let radio5 = document.querySelector("#jawablima");
+
+        radio1.addEventListener('click', ()=> {
+        let n1 = document.getElementById("nomor1");
+        n1.className = n1.className.replace(" belum"," sudah");
+
+        let pilsiswa1 = document.querySelector('input[name="jawabansatu"]:checked').value; 
+        pilsiswa.push(pilsiswa1);
+        console.log(pilsiswa);
+        // jwbn1 = pilsiswa1;
+        // return jwbn1;
+        //tampilkan.innerHTML = pilsiswa1;
+        })
+        radio2.addEventListener('click', ()=>{
+            let n2 = document.getElementById("nomor2");
+            n2.className = n2.className.replace(" belum"," sudah");
+
+            let pilsiswa2 = document.querySelector('input[name="jawabandua"]:checked').value; 
+            pilsiswa.push(pilsiswa2);
+            // jwbn2 = pilsiswa2;
+            // return jwbn2;  
+        })
+        radio3.addEventListener('click', ()=>{
+            let n3 = document.getElementById("nomor3");
+            n3.className = n3.className.replace(" belum"," sudah");
+
+            let pilsiswa3 = document.querySelector('input[name="jawabantiga"]:checked').value; 
+            pilsiswa.push(pilsiswa3);
+            // jwbn3 = pilsiswa3;
+            // return jwbn3; 
+        })
+        radio4.addEventListener('click', ()=>{
+            let n4 = document.getElementById("nomor4");
+            n4.className = n4.className.replace(" belum"," sudah");
+
+            let pilsiswa4 = document.querySelector('input[name="jawabanempat"]:checked').value;
+            pilsiswa.push(pilsiswa4);
+            // jwbn4 = pilsiswa4;
+            // return jwbn4;
+        })
+        radio5.addEventListener('click', ()=>{
+            let n5 = document.getElementById("nomor5");
+            n5.className = n5.className.replace(" belum"," sudah");
+
+            let pilsiswa5 = document.querySelector('input[name="jawabanlima"]:checked').value; 
+            pilsiswa.push(pilsiswa5);
+            // jwbn5 = pilsiswa5;
+            // return jwbn5; 
+        })
+
+        console.log(pilsiswa);

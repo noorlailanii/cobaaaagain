@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Kuis 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen'>	
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">
+            <img src="assets/img/bangunruang.png" style="width: 20%;">
+            Bangun Ruang
+        </a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars" style="color:white;"></i></button>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">
+                            <h5>Daftar Materi</h5>
+                        </div>
+                            <a class="nav-link" href="pengantar.html">
+                            <div class="sb-nav-link-icon" aria-expanded="true"><i class="fas fa-book"></i></div>
+                            Pengantar Bangun Ruang
+                        </a>
+                        
+                        <a class="nav-link collapsed active" href="pangkattiga.html" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Pangkat Tiga & Akar Pangkat Tiga
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link active" href="pangkattiga.html">Pangkat Tiga</a>
+                                <a class="nav-link" href="akarpangkattiga.html">Akar Pangkat Tiga</a>
+                                <a class="nav-link" href="kuis1.html">Kuis 1</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="jaringkubus.html" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-cube"></i></div>
+                            Jaring-Jaring
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>                            
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="jaringkubus.html">Jaring-Jaring Kubus</a>
+                                <a class="nav-link" href="jaringbalok.html">Jaring-Jaring Balok</a>
+                                <a class="nav-link" href="kuis2.html">Kuis 2</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="volumekubus.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                            <div class="sb-nav-link-icon"><i class="fas fa-cubes"></i></div>
+                            Volume
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="pagesCollapseError" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="volumekubus.html">Volume Kubus</a>
+                                <a class="nav-link" href="volumebalok.html">Volume Balok</a>
+                                <a class="nav-link" href="kuis3.html">Kuis 3</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="masalah.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
+                            Menyelesaikan masalah tentang Volume Kubus dan Balok
+                        </a>
+                        <a class="nav-link" href="evaluasi.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-pencil-square"></i></div>
+                            Evaluasi
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid p-4" id="awalan">
+                    <div class="card card-header col-xl-12 text-sm-justify" 
+                    style="background:url(assets/img/wallkuis.png) no-repeat ; 
+                    background-size: cover; height: 80px;">
+                        <h3 class="m-2 text-sm-center" style="color: white; font-size: 40px;">KUIS 1 </h3>
+                    </div>
+                    <div class="row mx-6 mt-5">
+                        <div class="card card-body col-xl-2 col-md-6 text-sm-justify"
+                        style="border: 2px double orangered;">
+                            <div class="card card-body col-md-auto text-center" style="background-color: peachpuff;">
+                                <h3 class="m-2 text-sm-center">Petunjuk Kuis</h3>
+                            </div>
+                            <br>
+                            <ol>
+                                <li>Kuis ini terdiri dari 5 soal berupa pilihan ganda.</li>
+                                <li>Setiap soal memiliki bobot poin sebanyak 20 poin.</li>
+                                <li>Silahkan lengkapi data diri Anda pada form disamping.</li>
+                                <li>Tekan "Mulai Kuis" jika Anda sudah melengkapi identitas.</li>
+                                <li>Tekan salah satu pilihan jawaban yang dianggap benar.</li>
+                                <li>Setelah semua pertanyaan selesai dijawab, 
+                                    tekan tombol "Selesai" dan halaman hasil akan muncul.</li>
+                            </ol>
+                        </div>
+                        <div class="card card-body col-xl-2 col-md-6 text-sm-justify"
+                        style="border: 2px double orangered;">
+                            <div class="card card-body col-md-auto text-center" style="background-color: peachpuff;">
+                                <h3 class="m-2 text-sm-center">Identitas</h3>
+                            </div><br>
+                            <form>
+                                <table class="table-borderless m-4 text-center" style="width: 80%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Nama</td>
+                                            <td>:</td>
+                                            <td class="ms-2">
+                                                <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" 
+                                                style="border:1px solid black;  width: 100%;text-align: center;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kelas</td>
+                                            <td>:</td>
+                                            <td class="ms-2">
+                                                <input type="text" name="kelas" id="kelas" placeholder="Masukkan Kelas" 
+                                                style="border:1px solid black;  width: 100%;text-align: center;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sekolah</td>
+                                            <td>:</td>
+                                            <td>
+                                                <input type="text" name="sekolah" id="sekolah" placeholder="Masukkan Sekolah" 
+                                                style="border:1px solid black;  width: 100%;text-align: center;">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="akarpangkattiga4.html" class="btn btn-secondary">Kembali ke Materi</a>
+                                <button type="button" class="btn btn-warning text-center" id="mulaikuis">Mulai Kuis</button>
+                                
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid p-2 hilang" id="soaltampiltampil">
+                    <div class="row mx-5 mt-5">
+                        <div class="col-lg-8 p-3 me-sm-4" style="background-color:beige;">
+                            <div class="card-body p-1">
+                                <div class="bgsoal">
+                                    <div id="soal-1">
+                                    <div class="soalsoal">
+                                            <p id="soal"></p>
+                                            <script>
+                                                function set(jawabansatu){
+                                                    let jwbsiswa1 = document.getElementById("kocak");
+                                                    jwbsiswa1.innerHTML = jawabansatu;
+                                                    cekkunci();
+                                                    // jwbsiswa1.innerHTML = jawabansatu;
+                                                }
+                                            </script>
+                                                <form name="jawabsatu">
+                                                    <div class="jawaban">
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="a" onclick="set(this.value)">
+                                                        <span id="a"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="b" onclick="set(this.value)">
+                                                        <span id="b"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="c" onclick="set(this.value)">
+                                                        <span id="c"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="d" onclick="set(this.value)">
+                                                            <span id="d"></span><br>
+                                                        
+<!-- 
+                                                        <div class="bg_pilihan">
+                                                            <input type="radio" id="jawaban" name="jawabansatu" value="a" onclick="set(this.value)">
+                                                            <span id="a"></span><br>
+                                                        </div>
+                                                        <div class="bg_pilihan">
+                                                            <input type="radio" id="jawaban" name="jawabansatu" value="b" onclick="set(this.value)">
+                                                            <span id="b"></span><br>
+                                                        </div>
+                                                        <div class="bg_pilihan">
+                                                            <input type="radio" id="jawaban" name="jawabansatu" value="c" onclick="set(this.value)">
+                                                            <span id="c"></span><br>
+                                                        </div>
+                                                        <div class="bg_pilihan">
+                                                            <input type="radio" id="jawaban" name="jawabansatu" value="d" onclick="set(this.value)">
+                                                            <span id="d"></span><br>
+                                                        </div> -->
+                                                    </div>
+                                                    <p id="kocak"></p>
+                                                    <div class="row">
+                                                        <div class="col-5"><a class="btn btn-primary disabled" onclick="">Sebelumnya</a></div>
+                                                        <div class="col-5 text-right"><a class="btn btn-primary" id="lanjut2">Selanjutnya</a></div>
+                                                    </div>
+                                                </form>
+                                    </div>
+                                    </div>
+                                    <div id="soal-2" hidden>
+                                        <p id="soal"></p>
+                                        <form name="jawabdua">
+                                            <div class="jawaban">
+                                                <input type="radio" id="jawaban" name="jawabansatu" value="a" onclick="set(this.value)">
+                                                <span id="a"></span><br>
+
+                                                <input type="radio" id="jawaban" name="jawabansatu" value="b" onclick="set(this.value)">
+                                                <span id="b"></span><br>
+
+                                                <input type="radio" id="jawaban" name="jawabansatu" value="c" onclick="set(this.value)">
+                                                <span id="c"></span><br>
+
+                                                <input type="radio" id="jawaban" name="jawabansatu" value="d" onclick="set(this.value)">
+                                                <span id="d"></span><br>                                                
+                                                <!-- <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabandua" value="a" onclick="set(this.value)">
+                                                    <span id="a"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabandua" value="b" onclick="set(this.value)">
+                                                    <span id="b"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabandua" value="c" onclick="set(this.value)">
+                                                    <span id="c"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabandua" value="d" onclick="set(this.value)">
+                                                    <span id="d"></span><br>
+                                                </div> -->
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-6"><a class="btn btn-primary" id="sebelumnya1">Sebelumnya</a></div>
+                                                <div class="col-6 text-right"><a class="btn btn-primary" id="lanjut3">Selanjutnya</a></div>
+                                            </div>
+                                        </form>
+                                        <!-- <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="a">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                            <span id="a"></span>
+                                            </label>
+                                        </div> 
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="b">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                            <span id="b"></span>
+                                            </label>
+                                        </div> 
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="c">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                            <span id="c"></span>
+                                            </label>
+                                        </div> 
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="d">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                            <span id="d"></span>
+                                            </label>
+                                        </div> 
+                                        <div class="row">
+                                            <div class="col-6"><a class="btn btn-primary" onclick="">Sebelumnya</a></div>
+                                            <div class=" col-6 text-right"><a class="lanjut2 btn btn-primary">Selanjutnya</a></div>
+                                        </div> -->
+                                    </div>
+
+                                    <div id="soal-3" hidden>
+                                        <p id="soal"></p>
+                                        <form name="jawabtiga">
+                                        <div class="jawaban">
+                                            <input type="radio" id="jawaban" name="jawabansatu" value="a" onclick="set(this.value)">
+                                                        <span id="a"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="b" onclick="set(this.value)">
+                                                        <span id="b"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="c" onclick="set(this.value)">
+                                                        <span id="c"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="d" onclick="set(this.value)">
+                                                            <span id="d"></span><br>
+                                            <!-- <div class="bg_pilihan">
+                                                <input type="radio" id="jawaban" name="jawabantiga" value="a" onclick="set(this.value)">
+                                                <span id="a"></span><br>
+                                            </div>
+                                            <div class="bg_pilihan">
+                                                <input type="radio" id="jawaban" name="jawabantiga" value="b" onclick="set(this.value)">
+                                                <span id="b"></span><br>
+                                            </div>
+                                            <div class="bg_pilihan">
+                                                <input type="radio" id="jawaban" name="jawabantiga" value="c" onclick="set(this.value)">
+                                                <span id="c"></span><br>
+                                            </div>
+                                            <div class="bg_pilihan">
+                                                <input type="radio" id="jawaban" name="jawabantiga" value="d" onclick="set(this.value)">
+                                                <span id="d"></span><br>
+                                            </div> -->
+                                        </div>
+                                        
+                                            
+                                            <div class="row">
+                                                <div class="col-6"><a class="btn btn-primary" id="sebelumnya2">Sebelumnya</a></div>
+                                                <div class="col-6 text-right"><a class="btn btn-primary" id="lanjut4">Selanjutnya</a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="soal-4" hidden>
+                                        <p id="soal"></p>
+                                        <form name="jawabempat">
+                                            <div class="jawaban">
+                                                <input type="radio" id="jawaban" name="jawabansatu" value="a" onclick="set(this.value)">
+                                                        <span id="a"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="b" onclick="set(this.value)">
+                                                        <span id="b"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="c" onclick="set(this.value)">
+                                                        <span id="c"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="d" onclick="set(this.value)">
+                                                            <span id="d"></span><br>
+                                                <!-- <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabanempat" value="a" onclick="set(this.value)">
+                                                    <span id="a"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabanempat" value="b" onclick="set(this.value)">
+                                                    <span id="b"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabanempat" value="c" onclick="set(this.value)">
+                                                    <span id="c"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabanempat" value="d" onclick="set(this.value)">
+                                                    <span id="d"></span><br>
+                                                </div> -->
+                                            </div>        
+                                            <div class="row">
+                                                <div class="col-6"><a class="btn btn-primary" id="sebelumnya3">Sebelumnya</a></div>
+                                                <div class="col-6 text-right"><a class="btn btn-primary" id="lanjut5">Selanjutnya</a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="soal-5" hidden>
+                                        <p id="soal"></p>
+                                        <form name="jawablima">
+                                            <div class="jawaban">
+                                                <input type="radio" id="jawaban" name="jawabansatu" value="a" onclick="set(this.value)">
+                                                        <span id="a"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="b" onclick="set(this.value)">
+                                                        <span id="b"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="c" onclick="set(this.value)">
+                                                        <span id="c"></span><br>
+
+                                                        <input type="radio" id="jawaban" name="jawabansatu" value="d" onclick="set(this.value)">
+                                                            <span id="d"></span><br>
+                                                <!-- <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabanlima" value="a" onclick="set(this.value)">
+                                                    <span id="a"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabanlima" value="b" onclick="set(this.value)">
+                                                    <span id="b"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabanlima" value="c" onclick="set(this.value)">
+                                                    <span id="c"></span><br>
+                                                </div>
+                                                <div class="bg_pilihan">
+                                                    <input type="radio" id="jawaban" name="jawabanlima" value="d" onclick="set(this.value)">
+                                                    <span id="d"></span><br>
+                                                </div> -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6"><a class="btn btn-primary" id="sebelumnya4">Sebelumnya</a></div>
+                                                <div class="col-6 text-right"><a class="btn btn-primary disabled" id="lanjut3">Selanjutnya</a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3" style="background-color:pink;">
+                            <div class="card-header" style="height:2rem; background-color:wheat;">
+                                <p id="waktutampil" class="text-center"></p>
+                            </div>
+                            <div class="card-header mt-3">
+                                Nomor Soal
+                            </div>
+                            <div class="card-header p-3" style="background-color: white;">
+                                <span class="nomor">
+                                    <a href="#" class="soall btn p-1 belum" id="nomor">1</a>
+                                </span>
+                                <span class="nomor">
+                                    <a href="#" class="soall btn p-1 belum" id="nomor">2</a>
+                                </span>
+                                <span class="nomor">
+                                    <a href="#" class="soall btn p-1 belum" id="nomor">3</a>
+                                </span>
+                                <span class="nomor">
+                                    <a href="#" class="soall btn p-1 mt-2 belum" id="nomor">4</a>
+                                </span>
+                                <span class="nomor">
+                                    <a href="#" class="soall btn p-1 mt-2 belum" id="nomor">5</a>
+                                </span>
+                                <p id="textbox"></p>
+                            </div>
+                        <p>Keterangan:</p>  
+                        <p><span class="btn p-1" style="background-color: white; width: 30%;">Putih </span>= Belum dijawab</p>
+                        <p><span class="btn p-1" style="background-color: rgb(101, 168, 255); width: 30%;">Biru </span>= Sudah dijawab</p>  
+                        <p><a class="btn p-1" style="background-color: rgb(101, 168, 255); width: 100%;" id="selesai">Selesai<a></a></p>  
+                    </div>
+                    </div>
+                </div>
+                <div class="container-fluid p-2 hilang" id="bgskor">
+                    <div class="row mx-6 mt-5">
+                        <div class="col p-3 me-sm-4" style="background-color:beige;">
+                            <div class="card-body p-1">
+                                <div class="card-header p-4">
+                                    Skor Kamu di Kuis 1 :
+                                    <center>
+                                        <p style="font-size: 30px;" id="skor"></p>
+                                    </center>
+
+                                </div>
+                                <p>Selesai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <table class="table table-primary">
+                <!--<thead>
+                    <tr>
+                        <tr>Soal</tr>
+                        <tr>Pil.a</tr>
+                        <tr>Pil.b</tr>
+                        <tr>Pil.c</tr>
+                        <tr>Pil.d</tr>
+                        <tr>Jwbn Bnr</tr>
+                    </tr>
+                </thead>
+                <tbody id="demo">
+
+                </tbody>
+            </table>
+            <p id="demo"></p>
+            -->
+            </table>
+            
+            </main>
+            <script>
+
+            // let soalTampil = document.querySelectorAll(".soalsoal");
+            //     for(let y=0; y<soalTampil.length; y++){
+            //         soalTampil[y].addEventListener('click',function(){
+            //             let pilih = document.querySelectorAll(".bg_pilihan input");
+            //             for(let j=0; j<pilih.length; j++){
+            //                 pilih[j].addEventListener('click',function(){
+            //                     soall[y].className = soall[y].className.replace("belum","sudah");
+            //                 })
+            //             }
+            //         })
+            //     }
+
+            </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script type="module" src="kuis1.js"></script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+    </script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    
+    <script id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+</body>
+</html>

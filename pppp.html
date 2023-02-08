@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bangun Ruang</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">
+                <img src="assets/img/bangunruang.png" class="logobangunruang">
+                <label class="tulisannya">Bangun Ruang</label>
+            </a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-3 ms-5-5 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars" style="color:white;"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">
+                                <h5>Daftar Materi</h5>
+                            </div>
+                                <a class="nav-link" href="pengantar.html">
+                                <div class="sb-nav-link-icon" aria-expanded="true"><i class="fas fa-book"></i></div>
+                                Pengantar Bangun Ruang
+                            </a>
+                            
+                            <a class="nav-link collapsed active" href="pangkattiga.html" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pangkat Tiga & Akar Pangkat Tiga
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link active" href="pangkattiga.html">Pangkat Tiga</a>
+                                    <a class="nav-link" href="akarpangkattiga.html">Akar Pangkat Tiga</a>
+                                    <a class="nav-link" href="kuis1.html">Kuis 1</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="jaringkubus.html" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-cube"></i></div>
+                                Jaring-Jaring
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>                            
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="jaringkubus.html">Jaring-Jaring Kubus</a>
+                                    <a class="nav-link" href="jaringbalok.html">Jaring-Jaring Balok</a>
+                                    <a class="nav-link" href="kuis2.html">Kuis 2</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="volumekubus.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <div class="sb-nav-link-icon"><i class="fas fa-cubes"></i></div>
+                                Volume
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="pagesCollapseError" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="volumekubus.html">Volume Kubus</a>
+                                    <a class="nav-link" href="volumebalok.html">Volume Balok</a>
+                                    <a class="nav-link" href="kuis3.html">Kuis 3</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link" href="masalah.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
+                                Menyelesaikan masalah tentang Volume Kubus dan Balok
+                            </a>
+                            <a class="nav-link" href="evaluasi.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-pencil-square"></i></div>
+                                Evaluasi
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-5 py-4">
+                        <h2 style="color: black;">A. Pangkat Tiga dan Akar Pangkat Tiga</h2>
+                        <div class="card card-body-tujuan mt-4">
+                            <p><b>Tujuan Pembelajaran:</b></p>
+                            <ol>
+                                <li>
+                                    Setelah belajar mengenai pangkat tiga dan akar 
+                                    pangkat tiga siswa dapat menentukan pangkat tiga dan akar pangkat tiga dengan benar.
+                                </li>
+                            </ol>
+                            
+                        </div>
+                        
+                        <h4 class="mt-4" style="color: black;">1. Pangkat Tiga</h4>
+                        <div class="card mb-4 p-4 text-sm-justify">  
+                            <p><b style="color: blue;">Pangkat tiga</b> suatu bilangan merupakan perkalian berulang pada bilangan 
+                            tersebut sebanyak 3 (tiga) kali. 
+                            Jika $p$ adalah sebuah bilangan, $p$ pangkat tiga dituliskan sebagai berikut :</p>
+                            <div class="card mb-4 col-lg-2 text-sm-center mx-auto d-block">
+                                <div class="card-body">
+                                    <span style="color:blue">$p^3 = p \times p \times p$</span>
+                                </div>
+                            </div>
+                            <p>Di mana $p^3$ dibaca $p$ pangkat tiga, yang berarti $p$ pangkat tiga adalah $p$ 
+                            kali $p$ kali $p$. Contoh saja $p$ yang diketahui ialah 2 berarti </p>
+                            <img src="assets/img/pangkattiga.png" style="width:25rem;">
+                            Angka yang dikalikan sebanyak tiga kali harus sama semua. 
+                            <br><br>                                               
+                            
+                            <div class="card card-body-simak">
+                                <img src="assets/img/simak.png" class="simak">
+                                <hr style="height: 0.5rem;">
+                                <h6 class="soalmm">Perhatikan soal berikut:</h6>
+                                <span style="color:black">Berapakah hasil dari 5<sup>3</sup>?</span>
+                                <br><h6 class="soalmm">Penyelesaian:</h6>
+                                <p>Pada soal di ketahui bilangan yang akan kita 
+                                kalikan sebanyak 3 kali yaitu 5. </p>
+                                <p>Jadi, <b>5<sup>3</sup> = 5 &#215; 5 &#215; 5 = 125</b></p>
+                                <p>Dan hasil perkaliannya adalah <b>125</b>.</p>
+                                <p>Begitulah cara menghitung pangkat tiga.
+                                </p>
+                            </div><br>
+                            Setelah contoh soal di atas, mari coba menjawab soal di bawah ini!<br>
+                            <br>
+                            
+                                <div class="card card-body-simak">
+                                    <div class="card-a card-body p-3" style="height: 70px;">
+                                        <h4 style="font-weight: 700; color: black;">
+                                            <center>
+                                                <img src="assets/img/panahkanan.png" class="marimencoba">
+                                                Mari Mencoba 1
+                                                <img src="assets/img/panahkiri.png" class="marimencoba">
+                                            </center>
+                                        </h4>
+                                    </div>
+                        
+                                    <div class="card card-body-mm">
+                                        <h5 style="color: black;">Isilah jawaban dalam kotak yang kosong
+                                            <img src="assets/img/contohsoal.png" style="width: 3rem;">
+                                        </h5>
+                                        <h6 style="color:blue"><i>Soal:</i></h6>
+                                        <span style="color:black">Berapakah hasil pangkat tiga dari bilangan $7$?</span>
+                                        <br>
+                                        <h6 style="color:#c00000"><i>Penyelesaian:</i></h6>
+                                <script>
+                                    var p1 = document.getElementById("s1");
+                                    var p2 = document.getElementById("d2");
+                                    var p3 = document.getElementById("t3");
+                                    var benar  = 0;
+                                    function ceksmm1(){
+                                        var soal = document.getElementById("smm1");
+
+                                        if(soal.value == "7"){
+                                            document.getElementById("smm1").style="border:3px solid green; width:3rem;height: 2rem; text-align:center";
+                                            benar = 1;
+                                        }   
+                                        else{
+                                            document.getElementById("smm1").style="border:3px solid red; width:3rem;height: 2rem; text-align:center";
+                                        }
+                                    }
+
+                                    function hapusdisabled1(){
+                                        if( benar == 1){
+                                            document.getElementById("s1").classList.remove('inputdisabled');
+                                        } else {
+
+                                        }
+                                        
+                                    }
+                                    function ceks1(){
+                                        var satu = document.getElementById("s1");
+                                    
+                                        if(satu.value == "7"){
+                                            document.getElementById("s1").style="border:3px solid green; width:3rem; height: 2rem;text-align:center";
+                                            benar = 2;
+                                        }
+                                        else{
+                                            document.getElementById("s1").style="border:3px solid red; width:3rem; height: 2rem;text-align:center";
+                                        }
+                                    }
+                                    function hapusdisabled2(){
+                                        if( benar == 2){
+                                            document.getElementById("d2").classList.remove('inputdisabled');
+                                        } else {
+
+                                        }
+                                    }
+                                    function cekd2(){
+                                        var dua = document.getElementById("d2");
+                                    
+                                        if(dua.value == "7"){
+                                            document.getElementById("d2").style="border:3px solid green; width:3rem; height: 2rem;text-align:center";
+                                            benar = 3;
+                                        }
+                                        else{
+                                            document.getElementById("d2").style="border:3px solid red; width:3rem;height: 2rem; text-align:center";
+                                        }                                                        
+                                    }
+                                    function hapusdisabled3(){
+                                        if( benar == 3){
+                                            document.getElementById("t3").classList.remove('inputdisabled');
+                                        } else {
+
+                                        }
+                                    }
+                                    
+                                    function cekt3(){
+                                        var tiga = document.getElementById("t3");
+                                    
+                                        if(tiga.value == "7"){
+                                            document.getElementById("t3").style="border:3px solid green; width:3rem;height: 2rem; text-align:center";
+                                            benar = 4;
+                                        }
+                                        else{
+                                            document.getElementById("t3").style="border:3px solid red; width:3rem;height: 2rem; text-align:center";
+                                        }                                                        
+                                    }
+
+                                    function hapusdisabled4(){
+                                        if( benar == 4){
+                                            document.getElementById("hasil1").classList.remove('inputdisabled');
+                                        } else {
+
+                                        }
+                                    }
+
+
+                                    function cekhasil1(){
+                                        var hasil = document.getElementById("hasil1");
+
+                                        if(hasil.value == "343"){
+                                            document.getElementById("hasil1").style="border:3px solid green; width:3.5rem;height: 2rem; text-align:center";
+                                            var hasil1= document.getElementById("hasil1").value ;
+                                            document.getElementById("fixhasil").innerHTML = "<b>" + hasil1 +"</b>";
+                                        }
+                                        else{
+                                            document.getElementById("hasil1").style="border:3px solid red; width:3.5rem;height: 2rem; text-align:center";
+                                        }
+
+                                        
+                                    }
+                                </script>
+                                <form class="d-lg-inline-flex">
+                                    <input type="text" class="form-control" name="soal_mm1" id="smm1" onkeyup="ceksmm1()" onchange="hapusdisabled1()" placeholder="..." style="border:1px solid black; width:3rem; height: 2rem; text-align: center;"> 
+                                    &nbsp;$^3$
+                                    <label for="satu1"> &nbsp;=&nbsp; </label> 
+                                    <input type="text"class="form-control inputdisabled" name="satu1" id="s1" onkeyup="ceks1()" onchange="hapusdisabled2()" placeholder="..." style=" width:3rem; height: 2rem;text-align: center;" >
+                                    <label for="dua2"> &nbsp; &#215;  &nbsp; </label> 
+                                    <input type="text" class="form-control inputdisabled" name="dua2" id="d2" onkeyup="cekd2()" onchange="hapusdisabled3()" placeholder="..."style=" width:3rem; height: 2rem;text-align: center;" >
+                                    <label for="tiga3">  &nbsp; &#215;  &nbsp; </label> 
+                                    <input type="text" class="form-control inputdisabled" name="tiga3" id="t3" onkeyup="cekt3()" onchange="hapusdisabled4()" placeholder="..."style=" width:3rem; height: 2rem;text-align: center;" >
+                                    <label for="hasil1">  &nbsp;=&nbsp; </label>  
+                                    <input type="text" class="form-control inputdisabled" name="hasil" id="hasil1" onkeyup="cekhasil1()" placeholder="..."style=" width:3.5rem; height: 2rem;text-align: center;" >
+                                    <br>
+                                    <br>
+                                </form> 
+                                    <p>Jadi, hasil dari 
+                                        <b>7<sup>3</sup></b>
+                                        =
+                                        <span id="fixhasil" style="border:1px solid black; width:50px; height: 1rem;text-align: center; padding: 0.5rem;"></span>
+                                    </p>
+
+                                <br>
+                                
+
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="container-fluid px-4 p-3 mb-4 text-center">
+                        <a href="pengantar.html" type="button" class="btn btn-primary">Sebelumnya</a>
+                        <a href="pangkattiga.html" type="button" class="btn btn-primary active">1</a> 
+                        <a href="pangkattiga2.html" type="button" class="btn btn-primary">2</a> 
+                        <a href="pangkattiga3.html" type="button" class="btn btn-primary">3</a> 
+                        <a href="pangkattiga2.html" type="button" class="btn btn-primary">Selanjutnya</a>                          
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };
+        </script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
+        <script id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
